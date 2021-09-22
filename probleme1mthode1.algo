@@ -1,0 +1,17 @@
+ALGORITHM somme_cummus_method1
+VAR
+    tab1: ARRAY_OF INTEGER [10];
+    tab2: ARRAY_OF INTEGER [6] ;
+    sommecommus:INTEGER:=0 ;
+    i,j : INTEGER ;
+BEGIN
+    FOR i FROM 0 TO tab1.length -1  STEP 1  DO
+     FOR j FROM 0 TO tab2.length -1  STEP 1  DO
+      IF ( tba1[i]==tab2[j]) THEN
+           sommecommus := sommecommus + tab[i] *2  ; 
+           break ;
+      END_IF 
+    END_FOR
+    write ( " la somme des numeros commus dans les deux tableau " , sommecommus);
+    END_FOR
+END

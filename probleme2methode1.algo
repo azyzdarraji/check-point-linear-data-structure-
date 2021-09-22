@@ -1,0 +1,35 @@
+ALGORITHM somme_defferent_method1
+VAR
+    tab1: ARRAY_OF INTEGER [10];
+    tab2: ARRAY_OF INTEGER [6] ;
+    sommedefferent:INTEGER:=0 ;
+    i,j : INTEGER ;
+    found : BOOLEAN ;
+BEGIN
+    FOR i FROM 0 TO tab1.length -1  STEP 1  DO
+      found == false ; 
+     FOR j FROM 0 TO tab2.length -1  STEP 1  DO
+      IF ( tba1[i]==tab2[j]) THEN
+          found == true 
+           break ;
+      END_IF
+     END_FOR
+      IF ( found == false )
+        sommedefferent :=sommedefferent + tab1[i] ; 
+    END_FOR 
+
+FOR i FROM 0 TO tab2.length -1  STEP 1  DO
+      found == false ; 
+     FOR j FROM 0 TO tab1.length -1  STEP 1  DO
+      IF ( tba2[i]==tab1[j]) THEN
+          found == true 
+           break ;
+      END_IF
+     END_FOR
+      IF ( found == false )
+        sommedefferent :=sommedefferent + tab2[I] ; 
+    END_FOR 
+    
+    write ( " la somme des element  defferent dans les deux tableau " , sommedefferent);
+    END_FOR
+END

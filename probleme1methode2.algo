@@ -1,0 +1,27 @@
+ALGORITHM  somme_cummus_method2
+VAR
+ tab1: ARRAY_OF INTEGER [10];
+ tab2: ARRAY_OF INTEGER [6] ; 
+ hash :HASH_TABLE< INTEGER ,INTEGER> ;
+ i , j : INTEGER ; 
+ sommecommus : INTEGER := 0 ;
+BEGIN
+    FOR i FROM 0 TO tab1.length STEP 1  DO
+        hash.insert( tab1[i],1) ;
+    END_FOR
+    FOR j FROM 0 TO tab2.length STEP 1  DO
+        IF (hash.lookup(tab2[i]) == true ) THEN
+          hash.insert (tab2[i],2) ; 
+        ELSE 
+          hash.insert ( tab2[i],1); 
+        END_IF 
+    END_FOR
+
+    FOR j FROM O TO tab2.length STEP 1  DO
+        
+       IF hash.get (tab1[j] == 2 )
+       sommecommus := sommecommus + tab[j] * 2 
+       END_IF
+    END_FOR
+
+END
